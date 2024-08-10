@@ -164,4 +164,60 @@ a = str(a)
 print(type(a))
 '''
 
+'''
+Type Casting Functions:
+1. int(y [base]) -> converts y to an integer and base specifies the number base. For example, if you want to convert the string in decima numbers then you'll use 10 as base.
+2. float(y) -> converts y to a floating point number
+3. complex(real [imag]) -> creates a complex number.
+4. str(y) -> converts y top a string
+5. tuple(y) -> converts y to a tuple
+6. list(y) -> converts y to a list
+7. set(y) -> converts y to a set
+8. dict(y) -> creates a dictionary and y should be a sequence of (key, value) tuples
+9. ord(y) -> converts a character into an integer
+10. hex(y) -> converts an integer to a hexadecimal string
+11. oct -> converts an integer to an octal string
+'''
+
 # Input in python: Taking input from user in python
+"""
+input() statement is used to accept values (using keyboard) from the user at run-time
+result for input is always a str. So, we need to use type casting based on the input we are desiring, as follows:
+int( input()) # int
+float( input() ) # float
+"""
+
+'''
+name = input("enter your name: ")
+print("Welcome: ", name)
+
+val = input("Enter some value: ")
+print(val, type(val)) # 99.99 <class 'str'>
+
+name = input("enter name: ")
+age = int(input("enter age: "))
+marks = float(input("enter marks: "))
+print("Name: ", name, ", Age: ", age, ", Marks: ", marks)
+'''
+
+# Practice problems:
+'''
+# Q: Write a program to input 2 number and print their sum:
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("Sum is: ", a + b)
+
+# Q: Write a program in input side of a square and print its area.
+side = float(input("Side of square: "))
+print("Area: ", side * side)
+
+#  Q: Write a program to input two floating point numbers and print their average.
+one = float(input("First number: "))
+two = float(input("Second number: "))
+print("Average: ", (one + two) / 2)
+
+# Q: Write a program to input 2 int numbers a & b. Print True if a >= b. If not, print False.
+a = int(input("first number: "))
+b = int(input("second number: "))
+print(a >= b)
+'''
